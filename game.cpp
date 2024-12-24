@@ -107,7 +107,7 @@ int main() {
             ) || (
                 player_entity.getPosition().x <= (pipe_bottom.getPosition().x + 52) && (player_entity.getPosition().x + 34) >= pipe_bottom.getPosition().x &&
                 player_entity.getPosition().y <= (pipe_bottom.getPosition().y + 320) && (player_entity.getPosition().y + 24) >= pipe_bottom.getPosition().y
-            )));
+            ) || player_entity.getPosition().y >= (512 - 150)));
         }
     }
 }
